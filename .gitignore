@@ -1,1 +1,24 @@
-.idea
+# Composer dependencies
+/vendor/
+
+# Laravel, Symfony, Yii, CakePHP, etc. environment files
+.env
+.env.*
+
+# IDE and system files
+.idea/
+.vscode/
+
+
+# Lando & Docker
+.lando.yml
+.lando.local.yml
+.docker/
+.dockerignore
+docker-compose*.yml
+
+# Composer generated files
+composer.lock
+
+# Git
+.gitignore
