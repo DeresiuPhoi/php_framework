@@ -1,4 +1,6 @@
 <?php
 require_once dirname(__DIR__) . "/vendor/autoload.php";
 
-dd("Hello World");
+use Vendor\Framework\Http\Request;
+$request = Request::createFromGlobals();
+dd($request);
