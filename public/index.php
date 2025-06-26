@@ -3,14 +3,15 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-require_once dirname(__DIR__) . "/vendor/autoload.php";
+define('BASE_PATH', dirname(__DIR__));
+require_once BASE_PATH . "/vendor/autoload.php";
 
 use Vendor\Framework\Http\Kernel;
 use Vendor\Framework\Http\Request;
 $request = Request::createFromGlobals();
 
 
-$content = '<h1>Hello, World!</h1>';
 $kernel = new Kernel();
 $response = $kernel->handle($request);
+
 $response->send();
