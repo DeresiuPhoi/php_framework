@@ -6,4 +6,4 @@ config:
   database: mysql
 services:
   phpmyadmin:
-    type: phpmyadmin
+    type: phpmyadmin:5.2
