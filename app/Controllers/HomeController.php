@@ -5,7 +5,7 @@ use Vendor\Framework\Http\Response;
 
 class HomeController
 {
-    public function index(array $params): Response
+    public function index(): Response
     {
         return new Response("Добро пожаловать!", 200);
     }
